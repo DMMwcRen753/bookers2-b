@@ -10,8 +10,6 @@ class UsersController < ApplicationController
     @yesterday_book = @books.created_yesterday
     @this_week_book = @books.created_this_week
     @last_week_book = @books.created_last_week
-    @books_count = @user.book.group_by_day(:create_at).size
-    
   end
 
   def index

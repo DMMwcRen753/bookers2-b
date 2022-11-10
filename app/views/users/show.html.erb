@@ -77,6 +77,12 @@
             <td><%= @books.created_days_ago(0).count %></td>
           </tbody>
         </table>
+        <div class="main">
+          <label class="text-user">日別投稿数(7日間 : <%= @books.count %>)</label>
+          <div class="graph">
+            <%= line_chart @books.group_by_day(:created_at).count %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
