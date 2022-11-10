@@ -11,6 +11,10 @@ import "jquery"
 import "popper.js"
 import "bootstrap"
 
+import "chartkick"
+import "chart.js"
+import "chrat.bundle"
+
 import '@fortawesome/fontawesome-free/js/all';
 import "../stylesheets/application" 
 
